@@ -1,0 +1,66 @@
+html {
+    padding: 0% 15%;
+    height: 100%;
+}
+
+.preference-item {
+    width: 50%;
+    display: flex;
+}
+
+.preferences {
+    margin-top: 3%;
+    display: flex;
+}
+
+.preference {
+    display: inline-block;
+}
+
+#content-center {
+    justify-content: center;
+}
+
+.row {
+    display: block;
+    width: 50%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+main {
+    margin-top: 3%;
+    display: table-row;
+    height: 100%;
+}
+
+.content {
+    display: table;
+    height: 100%;
+}
+
+footer {
+    flex: 0 0 auto;
+    margin-top: 3%;
+}
+
+.footer-item {
+    display: inline-block;
+    width: 24%;
+}
+
+.navbar li a {
+    font-size: x-large;
+}
+
+.navbar li a:hover {
+    background-color: violet;
+}
+
+.navbar li .active {
+    background-color: aqua;
+}

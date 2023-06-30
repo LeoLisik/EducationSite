@@ -1,0 +1,38 @@
+.auth-item {
+    display: inline-block;
+    width: 50%;
+    height: 50%;
+    margin-top: 20%;
+}
+
+#auth-form {
+    width: 30%;
+}
+
+#auth-slider {
+    float: right;
+}
+
+#auth-form h2 {
+    text-align: center;
+}
+
+#auth-form button {
+    width: 100%;
+}
+
+#auth-form a {
+    text-decoration: underline;
+    display: block;
+    margin-top: 3%;
+}
+
+#auth-form input {
+    margin-top: 5%;
+}
+
+#register {
+    text-align: center;
+    font-size: x-large;
+    margin-top: 10%;
+}

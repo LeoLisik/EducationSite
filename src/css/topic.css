@@ -1,0 +1,27 @@
+.topic-item {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 7%;
+}
+
+#accordion {
+    width: 70%;
+    float: right;
+}
+
+#subitem {
+    width: 20%;
+}
+
+.video {
+    display: inline-block;
+}
+
+.video img {
+    width: 140px;
+    height: 70px;
+}
+
+.video p {
+    text-align: center;
+}

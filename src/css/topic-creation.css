@@ -1,0 +1,46 @@
+.topic-item {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 7%;
+}
+
+#accordion {
+    width: 70%;
+    float: right;
+}
+
+#accordion h2 {
+    display: inline;
+}
+
+#accordion .btn-outline-success {
+    float: right;
+    width: 20%;
+}
+
+.topic p {
+    font-size: xx-large;
+    margin: 0 auto;
+}
+
+.nav-btn {
+    display: block;
+    width: 100%;
+}
+
+#subitem {
+    width: 20%;
+}
+
+.inline {
+    display: inline;
+}
+
+#complete-btn {
+    width: 100% !important;
+}
+
+.accordion-item {
+    margin-top: 3%;
+    margin-bottom: 3%;
+}

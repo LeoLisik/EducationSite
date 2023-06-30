@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link href="../../css/index.css" rel="stylesheet">
+    <link href="../../css/topic-creation.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="content">
+        <header>
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <img src="/docs/5.3/assets/brand/bootstrap-logo.svg" alt="Logo" width="30" height="24">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse float-end" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Главная</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <img src="" alt="notify">
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <img src="" alt="profile">
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Настройки</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Выход</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <div class="topic-item" id="subitem">
+                <button type="button" class="btn btn-secondary nav-btn">Мои темы</button>
+                <button type="button" class="btn btn-secondary nav-btn">На проверке</button>
+                <button type="button" class="btn btn-secondary nav-btn">Ученики</button>
+            </div>
+            <div class="topic-item" id="accordion">
+                <h2>Создание темы</h2>
+                <form>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Название темы</label>
+                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Описание темы</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                    <h3 class="inline">Подтемы</h3>
+                    <button type="button" class="btn btn-outline-success">Добавить</button>
+                    <div class="accordion accordion-flush" id="accordionPanelsStayOpenExample">
+                        <div class="accordion-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                    <h3>Название подтемы</h3>
+                                </button>
+                            </h3>
+                            <div id="collapseOne" class="accordion-collapse collapse">
+                                <div class="accordion-body">
+                                    <div class="mb-3">
+                                        <label for="exampleInputEmail1" class="form-label">Название подтемы</label>
+                                        <input type="text" class="form-control" id="exampleInputEmail1"
+                                            aria-describedby="emailHelp">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="exampleFormControlTextarea1" class="form-label">Описание
+                                            подтемы</label>
+                                        <textarea class="form-control" id="exampleFormControlTextarea1"
+                                            rows="3"></textarea>
+                                    </div>
+
+                                    <h4 class="inline">Видео</h4>
+                                    <button type="button" class="btn btn-outline-success">Добавить</button>
+                                    <div class="accordion accordion-flush" id="accordionPanelsStayOpenExample">
+                                        <div class="accordion-item">
+                                            <h4 class="accordion-header">
+                                                <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                                    aria-expanded="false" aria-controls="collapseTwo">
+                                                    <h4>Название видео</h4>
+                                                </button>
+                                            </h4>
+                                            <div id="collapseTwo" class="accordion-collapse collapse">
+                                                <div class="accordion-body">
+                                                    <div class="mb-3">
+                                                        <label for="exampleInputEmail1" class="form-label">Название
+                                                            видео</label>
+                                                        <input type="text" class="form-control" id="exampleInputEmail1"
+                                                            aria-describedby="emailHelp">
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label for="exampleInputEmail1" class="form-label">URL</label>
+                                                        <input type="text" class="form-control" id="exampleInputEmail1"
+                                                            aria-describedby="emailHelp">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <h4 class="inline">Задания</h4>
+                                    <button type="button" class="btn btn-outline-success">Добавить</button>
+                                    <div class="accordion accordion-flush" id="accordionPanelsStayOpenExample">
+                                        <div class="accordion-item">
+                                            <h4 class="accordion-header">
+                                                <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                                    aria-expanded="false" aria-controls="collapseThree">
+                                                    <h4>Название задания</h4>
+                                                </button>
+                                            </h4>
+                                            <div id="collapseThree" class="accordion-collapse collapse">
+                                                <div class="accordion-body">
+                                                    <div class="mb-3">
+                                                        <label for="exampleInputEmail1" class="form-label">Название
+                                                            задания</label>
+                                                        <input type="text" class="form-control" id="exampleInputEmail1"
+                                                            aria-describedby="emailHelp">
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label for="exampleFormControlTextarea1"
+                                                            class="form-label">Описание задания</label>
+                                                        <textarea class="form-control" id="exampleFormControlTextarea1"
+                                                            rows="3"></textarea>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <h4 class="inline">Тесты</h4>
+                                    <button type="button" class="btn btn-outline-success">Добавить</button>
+                                    <div class="accordion accordion-flush" id="accordionPanelsStayOpenExample">
+                                        <div class="accordion-item">
+                                            <h4 class="accordion-header">
+                                                <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#collapseFour"
+                                                    aria-expanded="false" aria-controls="collapseFour">
+                                                    <h4>Название теста</h4>
+                                                </button>
+                                            </h4>
+                                            <div id="collapseFour" class="accordion-collapse collapse">
+                                                <div class="accordion-body">
+                                                    <div class="mb-3">
+                                                        <label for="exampleInputEmail1" class="form-label">Название
+                                                            теста</label>
+                                                        <input type="text" class="form-control" id="exampleInputEmail1"
+                                                            aria-describedby="emailHelp">
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label for="exampleFormControlTextarea1"
+                                                            class="form-label">Описание теста</label>
+                                                        <textarea class="form-control" id="exampleFormControlTextarea1"
+                                                            rows="3"></textarea>
+                                                    </div>
+
+                                                    <h5>Вопросы</h5>
+                                                    <button type="button"
+                                                        class="btn btn-outline-success">Добавить</button>
+                                                    <div class="accordion accordion-flush"
+                                                        id="accordionPanelsStayOpenExample">
+                                                        <div class="accordion-item">
+                                                            <h5 class="accordion-header">
+                                                                <button class="accordion-button collapsed" type="button"
+                                                                    data-bs-toggle="collapse"
+                                                                    data-bs-target="#collapseFive" aria-expanded="false"
+                                                                    aria-controls="collapseFive">
+                                                                    <h5>Вопрос 1</h5>
+                                                                </button>
+                                                            </h5>
+                                                            <div id="collapseFive" class="accordion-collapse collapse">
+                                                                <div class="accordion-body">
+                                                                    <div class="mb-3">
+                                                                        <label for="exampleInputEmail1"
+                                                                            class="form-label">Текст вопроса</label>
+                                                                        <input type="text" class="form-control"
+                                                                            id="exampleInputEmail1"
+                                                                            aria-describedby="emailHelp">
+                                                                    </div>
+                                                                    <h5>Ответы</h5>
+                                                                    <button type="button"
+                                                                        class="btn btn-outline-success">Добавить</button>
+                                                                    <ul>
+                                                                        <li>
+                                                                            <input type="text" class="form-control"
+                                                                                id="exampleInputEmail1"
+                                                                                aria-describedby="emailHelp">
+                                                                        </li>
+                                                                        <li>
+                                                                            <input type="text" class="form-control"
+                                                                                id="exampleInputEmail1"
+                                                                                aria-describedby="emailHelp">
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-outline-success" id="complete-btn">Завершить</button>
+                </form>
+            </div>
+        </main>
+    </div>
+    <footer>
+        <div>
+            <p>Name является некомерческой организацией, предоставляющий доступ к информационному ресурсу в сети
+                интернет по лицензии MIT</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+</body>
+
+</html>

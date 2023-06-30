@@ -1,0 +1,33 @@
+.topics {
+    justify-content:space-around;
+    display: flex;
+}
+
+.topic {
+    display: inline-block;
+    width: 40%;
+    margin-top: 5%;
+}
+
+.topic:hover {
+    background-color: antiquewhite;
+}
+
+.topic img {
+    float: right;
+    width: 100px;
+    height: 100px;
+}
+
+.topic p {
+    text-align: center;
+}
+
+.topic h3 {
+    font-size: x-large;
+}
+
+.topic-head {
+    display: flex; 
+    justify-content: space-between;
+}

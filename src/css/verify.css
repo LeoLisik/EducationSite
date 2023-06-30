@@ -1,0 +1,37 @@
+.topic-item {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 7%;
+}
+
+#accordion {
+    width: 70%;
+    float: right;
+}
+
+#accordion h2 {
+    display: inline;
+}
+
+.nav-btn {
+    display: block;
+    width: 100%;
+}
+
+#subitem {
+    width: 20%;
+}
+
+.accordion-header p {
+    margin: 0;
+    vertical-align: middle;
+}
+
+.accordion-item form button {
+    width: 40%;
+}
+
+.interactions {
+    justify-content: space-between;
+    display: flex;
+}
