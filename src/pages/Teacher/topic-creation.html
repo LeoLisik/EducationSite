@@ -60,26 +60,27 @@
             </div>
             <div class="topic-item" id="accordion">
                 <h2>Создание темы</h2>
-                <form>
+                <form action="creation-handler.php" method="get">
                     <div class="mb-3">
                         <label for="exampleInputEmail1" class="form-label">Название темы</label>
-                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <input name="topicName" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
                     </div>
                     <div class="mb-3">
                         <label for="exampleFormControlTextarea1" class="form-label">Описание темы</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        <textarea name="topicDescription" class="form-control" id="exampleFormControlTextarea1" rows="3" required></textarea>
                     </div>
                     <h3 class="inline">Подтемы</h3>
-                    <button type="button" class="btn btn-outline-success">Добавить</button>
-                    <div class="accordion accordion-flush" id="accordionPanelsStayOpenExample">
-                        <div class="accordion-item">
+                    <button type="button" class="btn btn-outline-success" id="add_subtopic">Добавить</button>
+                    <div class="accordion accordion-flush" id="subtopics">
+                        
+                        <!--<div class="accordion-item">
                             <h3 class="accordion-header">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                    data-bs-target="#subtopic1" aria-expanded="false" aria-controls="subtopic1">
                                     <h3>Название подтемы</h3>
                                 </button>
                             </h3>
-                            <div id="collapseOne" class="accordion-collapse collapse">
+                            <div id="subtopic1" class="accordion-collapse collapse">
                                 <div class="accordion-body">
                                     <div class="mb-3">
                                         <label for="exampleInputEmail1" class="form-label">Название подтемы</label>
@@ -226,9 +227,10 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div>-->
+
                     </div>
-                    <button type="button" class="btn btn-outline-success" id="complete-btn">Завершить</button>
+                    <button type="submit" class="btn btn-outline-success" id="complete-btn">Завершить</button>
                 </form>
             </div>
         </main>
@@ -242,7 +244,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
         crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="../../js/jquery-3.7.0.min.js"></script>
+    <script src="../../js/topic-creation.js"></script>
 </body>
 
 </html>
